@@ -39,6 +39,7 @@ function mainMenu(person, people){
   switch(displayOption){
     case "info":
     // TODO: get person's info
+    displayInfo(person);
     break;
     case "family":
     // TODO: get person's family
@@ -106,3 +107,19 @@ function yesNo(input){
 function chars(input){
   return true; // default validation only
 }
+
+
+function displayInfo(information){
+  let infoAlert = " First Name: " + information[0].firstName + 
+  " \nLast Name: " + information[0].lastName + 
+  " \nGender: " + information[0].gender + 
+  " \nDOB: " + information[0].dob +
+  " \nHeight: " + information[0].height +
+  " \nWeight " + information[0].weight +
+  " \nEye Color: " + information[0].eyeColor +
+  " \nOccupation: " + information[0].occupation +
+  " \nparents: " + information[0].parents +
+  " \nCurrent Spouse: " + information[0].currentSpouse;
+alert(infoAlert);
+}
+

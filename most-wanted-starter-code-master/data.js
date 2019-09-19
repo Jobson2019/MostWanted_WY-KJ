@@ -258,7 +258,7 @@ const data = [
 		"eyeColor": "blue",
 		"occupation": "assistant",
 		"parents": [693243224, 888201200],
-		"currentSpouse": 313997561
+		"currentSpouse": 313997561 
 	},
 	{
 		"id": 313997561,
