@@ -110,7 +110,8 @@ function chars(input){
 
 
 function displayInfo(information){
-  let infoAlert = " First Name: " + information[0].firstName + 
+  let infoAlert = 
+  " First Name: " + information[0].firstName + 
   " \nLast Name: " + information[0].lastName + 
   " \nGender: " + information[0].gender + 
   " \nDOB: " + information[0].dob +
@@ -123,3 +124,26 @@ function displayInfo(information){
 alert(infoAlert);
 }
 
+function displayFamily(famInfo, data){
+  // let famInfoAlert = 
+  // " Direct Family: " + 
+  data.filter (function(el) {
+    if(el.id === famInfo.parents){
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+    )
+  if {
+    id === famInfo.parents
+    return true;
+  } 
+
+  else {
+    return false;
+  }
+
+  alert(famInfoAlert);
+}
