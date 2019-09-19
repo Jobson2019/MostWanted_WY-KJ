@@ -35,9 +35,10 @@ function mainMenu(person, people){
   }
 
   let displayOption = prompt("Found " + person[0].firstName + " " + person[0].lastName + ". Do you want to know their 'info', 'family', or 'descendants'? Type the option you want or 'restart' or 'quit'");
-
+  let searchInfoResults;
   switch(displayOption){
     case "info":
+    searchInfoResults = displayPerson(person);
     // TODO: get person's info
     break;
     case "family":
@@ -84,8 +85,10 @@ function displayPerson(person){
   // height, weight, age, name, occupation, eye color.
   let personInfo = "First Name: " + person.firstName + "\n";
   personInfo += "Last Name: " + person.lastName + "\n";
+  let personAge = "Age: " + person.dob + "\n";
+  let personHeight = "Height: " + person.height + "\n";
   // TODO: finish getting the rest of the information to display
-  alert(personInfo);
+  alert(personInfo + personAge + personHeight);
 }
 
 // function that prompts and validates user input
@@ -106,3 +109,4 @@ function yesNo(input){
 function chars(input){
   return true; // default validation only
 }
+
