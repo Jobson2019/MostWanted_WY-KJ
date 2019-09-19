@@ -40,6 +40,7 @@ function mainMenu(person, people){
     case "info":
     searchInfoResults = displayPerson(person);
     // TODO: get person's info
+    displayInfo(person);
     break;
     case "family":
     // TODO: get person's family
@@ -108,5 +109,46 @@ function yesNo(input){
 // helper function to pass in as default promptFor validation
 function chars(input){
   return true; // default validation only
+}
+
+
+
+function displayInfo(information){
+  let infoAlert = 
+  " First Name: " + information[0].firstName + 
+  " \nLast Name: " + information[0].lastName + 
+  " \nGender: " + information[0].gender + 
+  " \nDOB: " + information[0].dob +
+  " \nHeight: " + information[0].height +
+  " \nWeight " + information[0].weight +
+  " \nEye Color: " + information[0].eyeColor +
+  " \nOccupation: " + information[0].occupation +
+  " \nparents: " + information[0].parents +
+  " \nCurrent Spouse: " + information[0].currentSpouse;
+alert(infoAlert);
+}
+
+function displayFamily(famInfo, data){
+  // let famInfoAlert = 
+  // " Direct Family: " + 
+  data.filter (function(el) {
+    if(el.id === famInfo.parents){
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+    )
+  if {
+    id === famInfo.parents
+    return true;
+  } 
+
+  else {
+    return false;
+  }
+
+  alert(famInfoAlert);
 }
 
